@@ -17,4 +17,10 @@ if __name__ == "__main__":
     clf = svm.SVC(C=0.1, kernel='linear', decision_function_shape='ovr')
     clf.fit(x_train,y_train.ravel())
     
+    print clf.score(x_train, y_train)
+    print 'xunlianji:'
+    print clf.score(x_test, y_test)
+    print 'ceshiji:'
+    
+    
     
